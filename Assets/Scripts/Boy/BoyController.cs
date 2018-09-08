@@ -29,47 +29,56 @@ public class BoyController : MonoBehaviour
     public float MoveSpeed = 3;
 
     // 將人物一個一個部分，切開來 (是上面的 Child)
-    private GameObject[] BoyIdle = new GameObject[8];
-    private GameObject[] BoyWalk = new GameObject[8];
+    private GameObject[] BoyIdle = new GameObject[2];                       // Idle 上、下
+    private GameObject[] BoyWalk = new GameObject[8];                       // 走路
 
     private int lastState = 0;                                              // 前一次的狀態，如果一樣，就繼續播動畫，如果不一樣就繪動畫然後重播
     private float ControlGap = 0.01f;
 
     void Start()
     {
+        for (int i = 0; i < BoyIdle.Length; i++)
+            BoyIdle[i] = Idle.GetComponentsInChildren<Transform>(true)[i * 5 + 1].gameObject;       // 每4個一循環
+
         // 8 個方位加進來
-        for (int i = 0; i < 8; i++)             
-        {
-            BoyIdle[i] = Idle.GetComponentsInChildren<Transform>(true)[i * 5 + 1].gameObject;       // 每4個依循還
-            BoyWalk[i] = Walk.GetComponentsInChildren<Transform>(true)[i * 4 + 1].gameObject;       // 每3個依循還
-        }
+        for (int i = 0; i < 8; i++)
+            BoyWalk[i] = Walk.GetComponentsInChildren<Transform>(true)[i * 4 + 1].gameObject;       // 每3個一循環
     }
     void FixedUpdate()
     {
         // 接收上下左右的操控
         int TempState = 0;
-        float GetInputH = Input.GetAxis("Horizontal");
-        float GetInputV = Input.GetAxis("Vertical");
+        float GetInputH = Input.GetAxis("Horizontal");      // 水平（左右）
+        float GetInputV = Input.GetAxis("Vertical");        // 垂直 (上下)
 
         // 設定狀態機
+        // 左 +1 右 +2
         if (GetInputV < -ControlGap)
             TempState = 1;
         else if (GetInputV > ControlGap)
             TempState = 2;
 
+        // 下 +3 上 +6
+        //Debug.Log("Input H => " + GetInputH);
+        //Debug.Log("Input V => " + GetInputV);
         if (GetInputH < -ControlGap)
             TempState += 3;
         else if (GetInputH > ControlGap)
             TempState += 6;
 
-        if (TempState != 0)
+        // 總結
+        // 5 2 8
+        // 3 0 6
+        // 4 1 7
+        Debug.Log(TempState);
+        /*if (TempState != 0)
         {
             ResetToWalkState(TempState);
             BoyMove(lastState);
             lastState = TempState;
         }
         else if (TempState == 0)
-            ResetToIdleState(lastState);
+            ResetToIdleState(lastState);*/
     }
 
     #region 重製狀態
@@ -132,8 +141,8 @@ public class BoyController : MonoBehaviour
     {
         if (state == 0)
             state = 1;
-        ResetGameObject(0, state - 1);
-        BoyIdle[state - 1].SetActive(true);
+        // ResetGameObject(0, state - 1);
+        // BoyIdle[state - 1].SetActive(true);
     }
     // Walk
     private void ResetToWalkState(int state)
