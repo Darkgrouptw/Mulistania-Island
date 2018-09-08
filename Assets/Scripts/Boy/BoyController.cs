@@ -70,15 +70,15 @@ public class BoyController : MonoBehaviour
         // 5 2 8
         // 3 0 6
         // 4 1 7
-        Debug.Log(TempState);
-        /*if (TempState != 0)
+        //Debug.Log(TempState);
+        if (TempState != 0)
         {
-            ResetToWalkState(TempState);
-            BoyMove(lastState);
+            //ResetToWalkState(TempState);
+            //BoyMove(lastState);
             lastState = TempState;
         }
         else if (TempState == 0)
-            ResetToIdleState(lastState);*/
+            ResetToIdleState(lastState);
     }
 
     #region 重製狀態
@@ -91,8 +91,10 @@ public class BoyController : MonoBehaviour
                 Idle.SetActive(true);
                 Walk.SetActive(false);
                 for (int i = 0; i < BoyIdle.Length; i++)
-                    if(orgState != i)
+                    if (orgState != i)
                         BoyIdle[i].SetActive(false);
+                    else
+                        BoyIdle[i].SetActive(true);
                 break;
             case 1:
                 Idle.SetActive(false);
@@ -139,10 +141,11 @@ public class BoyController : MonoBehaviour
     // Idle
     private void ResetToIdleState(int state)
     {
-        if (state == 0)
+        if (state == 5 || state == 2 || state == 8)
             state = 1;
-        // ResetGameObject(0, state - 1);
-        // BoyIdle[state - 1].SetActive(true);
+        else
+            state = 0;
+        ResetGameObject(0, state);
     }
     // Walk
     private void ResetToWalkState(int state)
