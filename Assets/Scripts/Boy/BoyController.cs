@@ -15,6 +15,10 @@ public class BoyController : MonoBehaviour
     // 6 => 右
     // 7 => 右前
     // 8 => 右後
+    //
+    // 5 2 8
+    // 3 0 6
+    // 4 1 7
     ////////////////////////////////////////////////////////////
 
     ////////////////////////////////////////////////////////////
@@ -42,7 +46,12 @@ public class BoyController : MonoBehaviour
 
         // 8 個方位加進來
         for (int i = 0; i < 8; i++)
-            BoyWalk[i] = Walk.GetComponentsInChildren<Transform>(true)[i * 4 + 1].gameObject;       // 每3個一循環
+        {
+            // 每一開始 4 個一循環 (上下)
+            // 接下來都是 10 個一循環
+            int index = (i >= 2) ? (5 * 2 + (i - 2) * 11 + 1) : (i * 5 + 1);
+            BoyWalk[i] = Walk.GetComponentsInChildren<Transform>(true)[index].gameObject;
+        }
     }
     void FixedUpdate()
     {
@@ -59,22 +68,17 @@ public class BoyController : MonoBehaviour
             TempState = 2;
 
         // 下 +3 上 +6
-        //Debug.Log("Input H => " + GetInputH);
-        //Debug.Log("Input V => " + GetInputV);
         if (GetInputH < -ControlGap)
             TempState += 3;
         else if (GetInputH > ControlGap)
             TempState += 6;
 
         // 總結
-        // 5 2 8
-        // 3 0 6
-        // 4 1 7
         //Debug.Log(TempState);
         if (TempState != 0)
         {
-            //ResetToWalkState(TempState);
-            //BoyMove(lastState);
+            ResetToWalkState(TempState);
+            BoyMove(lastState);
             lastState = TempState;
         }
         else if (TempState == 0)
@@ -102,6 +106,8 @@ public class BoyController : MonoBehaviour
                 for (int i = 0; i < BoyWalk.Length; i++)
                     if (orgState != i)
                         BoyWalk[i].SetActive(false);
+                    else
+                        BoyWalk[i].SetActive(true);
                 break;
         }
     }
@@ -138,6 +144,7 @@ public class BoyController : MonoBehaviour
                 break;
         }
     }
+
     // Idle
     private void ResetToIdleState(int state)
     {
@@ -151,7 +158,6 @@ public class BoyController : MonoBehaviour
     private void ResetToWalkState(int state)
     {
         ResetGameObject(1, state - 1);
-        BoyWalk[state -1].SetActive(true);
     }
     #endregion
 }
