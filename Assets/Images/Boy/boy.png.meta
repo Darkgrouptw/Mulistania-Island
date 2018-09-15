@@ -50,7 +50,7 @@ TextureImporter:
     21300090: Boy_Walk_LeftForward_5
     21300092: Boy_Walk_LeftForward_6
     21300094: Boy_Walk_LeftForward_7
-    21300096: boy_48
+    21300096: Boy_Walk_LeftForward_8
     21300098: Boy_Walk_LeftForward_9
     21300100: Boy_Walk_LeftForward_10
     21300102: boy_51
@@ -71,7 +71,7 @@ TextureImporter:
     21300132: Boy_Walk_LeftBackward_6
     21300134: Boy_Walk_LeftBackward_7
     21300136: Boy_Walk_LeftBackward_9
-    21300138: boy_69
+    21300138: Boy_Walk_LeftBackward_9
     21300140: Boy_Walk_LeftBackward_10
     21300142: boy_71
     21300144: boy_72
@@ -329,6 +329,7 @@ TextureImporter:
     21300648: boy_122
     21300650: boy_123
     21300652: boy_124
+    21300654: Boy_Walk_LeftBackward_8
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -1264,15 +1265,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_41
+      name: Boy_Walk_LeftForward_1
       rect:
         serializedVersion: 2
         x: 18
         y: 701
         width: 33
         height: 93
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1284,15 +1285,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_42
+      name: Boy_Walk_LeftForward_2
       rect:
         serializedVersion: 2
         x: 62
         y: 706
         width: 38
         height: 88
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1304,15 +1305,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_43
+      name: Boy_Walk_LeftForward_3
       rect:
         serializedVersion: 2
         x: 108
         y: 704
         width: 45
         height: 90
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1324,15 +1325,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_44
+      name: Boy_Walk_LeftForward_4
       rect:
         serializedVersion: 2
         x: 165
         y: 706
         width: 38
         height: 88
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1344,15 +1345,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_45
+      name: Boy_Walk_LeftForward_5
       rect:
         serializedVersion: 2
-        x: 215
+        x: 214
         y: 700
         width: 36
         height: 94
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1364,15 +1365,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_46
+      name: Boy_Walk_LeftForward_6
       rect:
         serializedVersion: 2
         x: 267
         y: 703
         width: 35
         height: 91
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1384,15 +1385,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_47
+      name: Boy_Walk_LeftForward_7
       rect:
         serializedVersion: 2
         x: 322
         y: 704
         width: 36
         height: 90
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1404,15 +1405,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_48
+      name: Boy_Walk_LeftForward_8
       rect:
         serializedVersion: 2
-        x: 374
+        x: 373
         y: 704
         width: 38
         height: 90
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1424,15 +1425,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_49
+      name: Boy_Walk_LeftForward_9
       rect:
         serializedVersion: 2
         x: 429
         y: 703
         width: 42
         height: 91
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1444,15 +1445,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_50
+      name: Boy_Walk_LeftForward_10
       rect:
         serializedVersion: 2
-        x: 482
+        x: 481
         y: 706
         width: 32
         height: 88
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1664,15 +1665,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_61
+      name: Boy_Walk_LeftBackward_1
       rect:
         serializedVersion: 2
         x: 18
         y: 595
         width: 30
         height: 94
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1684,15 +1685,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_62
+      name: Boy_Walk_LeftBackward_2
       rect:
         serializedVersion: 2
         x: 59
         y: 595
         width: 38
         height: 94
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1704,15 +1705,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_63
+      name: Boy_Walk_LeftBackward_3
       rect:
         serializedVersion: 2
         x: 108
         y: 595
         width: 44
         height: 94
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1724,15 +1725,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_64
+      name: Boy_Walk_LeftBackward_4
       rect:
         serializedVersion: 2
         x: 165
         y: 598
         width: 44
         height: 91
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1744,15 +1745,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_65
+      name: Boy_Walk_LeftBackward_5
       rect:
         serializedVersion: 2
         x: 220
         y: 602
         width: 38
         height: 87
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1764,15 +1765,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_66
+      name: Boy_Walk_LeftBackward_6
       rect:
         serializedVersion: 2
         x: 271
         y: 599
         width: 31
         height: 90
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1784,15 +1785,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_67
+      name: Boy_Walk_LeftBackward_7
       rect:
         serializedVersion: 2
         x: 321
         y: 598
         width: 34
         height: 91
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1804,15 +1805,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_68
+      name: Boy_Walk_LeftBackward_8
       rect:
         serializedVersion: 2
         x: 372
         y: 601
         width: 36
         height: 88
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1824,15 +1825,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_69
+      name: Boy_Walk_LeftBackward_9
       rect:
         serializedVersion: 2
         x: 425
         y: 603
         width: 34
         height: 86
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -1844,15 +1845,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_70
+      name: Boy_Walk_LeftBackward_10
       rect:
         serializedVersion: 2
         x: 476
         y: 602
         width: 35
         height: 87
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2464,15 +2465,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_101
+      name: Boy_Walk_RightForward_1
       rect:
         serializedVersion: 2
         x: 18
         y: 382
         width: 33
         height: 93
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2484,15 +2485,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_102
+      name: Boy_Walk_RightForward_2
       rect:
         serializedVersion: 2
         x: 62
         y: 387
         width: 36
         height: 88
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2504,15 +2505,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_103
+      name: Boy_Walk_RightForward_3
       rect:
         serializedVersion: 2
         x: 105
         y: 385
         width: 45
         height: 90
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2524,15 +2525,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_104
+      name: Boy_Walk_RightForward_4
       rect:
         serializedVersion: 2
-        x: 155
+        x: 154
         y: 387
         width: 38
         height: 88
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2544,15 +2545,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_105
+      name: Boy_Walk_RightForward_5
       rect:
         serializedVersion: 2
         x: 202
         y: 388
         width: 37
         height: 87
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2564,15 +2565,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_106
+      name: Boy_Walk_RightForward_6
       rect:
         serializedVersion: 2
         x: 249
         y: 387
         width: 35
         height: 88
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2584,15 +2585,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_107
+      name: Boy_Walk_RightForward_7
       rect:
         serializedVersion: 2
         x: 297
         y: 385
         width: 36
         height: 90
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2604,15 +2605,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_108
+      name: Boy_Walk_RightForward_8
       rect:
         serializedVersion: 2
         x: 346
         y: 385
         width: 38
         height: 90
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2624,15 +2625,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_109
+      name: Boy_Walk_RightForward_9
       rect:
         serializedVersion: 2
         x: 394
         y: 384
         width: 42
         height: 91
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2644,15 +2645,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_110
+      name: Boy_Walk_RightForward_10
       rect:
         serializedVersion: 2
         x: 449
         y: 387
         width: 32
         height: 88
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2744,15 +2745,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_115
+      name: Boy_Walk_RightBackward_1
       rect:
         serializedVersion: 2
         x: 18
         y: 276
         width: 30
         height: 94
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2764,15 +2765,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_116
+      name: Boy_Walk_RightBackward_2
       rect:
         serializedVersion: 2
         x: 58
         y: 276
         width: 38
         height: 94
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2784,15 +2785,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_117
+      name: Boy_Walk_RightBackward_3
       rect:
         serializedVersion: 2
         x: 106
         y: 276
         width: 44
         height: 94
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2804,15 +2805,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_118
+      name: Boy_Walk_RightBackward_4
       rect:
         serializedVersion: 2
         x: 157
         y: 279
         width: 44
         height: 91
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2824,15 +2825,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_119
+      name: Boy_Walk_RightBackward_5
       rect:
         serializedVersion: 2
         x: 210
         y: 283
         width: 38
         height: 87
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2844,15 +2845,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_120
+      name: Boy_Walk_RightBackward_6
       rect:
         serializedVersion: 2
         x: 258
-        y: 280
+        y: 281
         width: 34
         height: 93
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2864,15 +2865,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_121
+      name: Boy_Walk_RightBackward_7
       rect:
         serializedVersion: 2
         x: 298
         y: 279
         width: 34
         height: 91
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2884,15 +2885,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_122
+      name: Boy_Walk_RightBackward_8
       rect:
         serializedVersion: 2
         x: 337
         y: 282
         width: 36
         height: 88
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2904,15 +2905,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_123
+      name: Boy_Walk_RightBackward_9
       rect:
         serializedVersion: 2
         x: 380
         y: 284
         width: 34
         height: 86
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -2924,15 +2925,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: boy_124
+      name: Boy_Walk_RightBackward_10
       rect:
         serializedVersion: 2
         x: 421
         y: 283
         width: 35
         height: 87
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
+      alignment: 2
+      pivot: {x: 0.5, y: 1}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
