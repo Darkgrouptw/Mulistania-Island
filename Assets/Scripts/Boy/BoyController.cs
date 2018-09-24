@@ -79,7 +79,7 @@ public class BoyController : MonoBehaviour
     }
     private void Update()
     {
-        // 這邊是用來判斷狀態回來時，表現的問題
+        #region 這邊是用來判斷狀態回來時，表現的問題
         if (IsAnimFixed != IsAnimFixedType.UNFIXED)
         {
             switch(IsAnimFixed)
@@ -91,9 +91,7 @@ public class BoyController : MonoBehaviour
                     break;
             }
         }
-    }
-    private void FixedUpdate()
-    {
+        #endregion
         #region 要先判斷有沒有僵持的動作
         // 先判斷是否是僵持狀態
         if (IsAnimFixed != IsAnimFixedType.UNFIXED)
