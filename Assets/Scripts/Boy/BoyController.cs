@@ -113,6 +113,7 @@ public class BoyController : MonoBehaviour
         int TempState = 0;
         float GetInputH = Input.GetAxis("Horizontal");      // 水平（左右）
         float GetInputV = Input.GetAxis("Vertical");        // 垂直 (上下)
+        Debug.Log("H: " + GetInputH + " V: " + GetInputV);
 
         // 設定狀態機
         // 左 +1 右 +2
