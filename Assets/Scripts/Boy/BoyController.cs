@@ -58,6 +58,12 @@ public class BoyController : MonoBehaviour
     private GameObject[] BoyIdle = new GameObject[2];                       // Idle 上、下
     private GameObject[] BoyWalk = new GameObject[8];                       // 走路
 
+    // 使用卡片各部分 Parent
+    // Use Card Parent 的各個
+    private GameObject[] UseCardParent;                                     // 每個特效的集合
+    private string[] UseCard_KeyWord = { "Normal", "LightFX" };             // 尋找的關鍵字
+
+
     // 細向控制
     private int lastState = 0;                                              // 前一次的狀態，如果一樣，就繼續播動畫，如果不一樣就繪動畫然後重播
     private float ControlGap = 0.01f;
@@ -76,6 +82,21 @@ public class BoyController : MonoBehaviour
             int index = (i >= 2) ? (5 * 2 + (i - 2) * 11 + 1) : (i * 5 + 1);
             BoyWalk[i] = Walk.GetComponentsInChildren<Transform>(true)[index].gameObject;
         }
+
+        // Use Card
+        UseCardParent = new GameObject[UseCard_KeyWord.Length];
+        Transform[] trans = UseCard.GetComponentsInChildren<Transform>(true);
+        int UseCardIndex = 0;
+        for (int i = 1; i < trans.Length; i++)
+            if(trans[i].name == UseCard_KeyWord[UseCardIndex])
+            {
+                UseCardParent[UseCardIndex] = trans[i].gameObject;
+                UseCardIndex++;
+
+                // 判斷是否超出邊界
+                if (UseCardIndex == UseCard_KeyWord.Length)
+                    break;
+            }
     }
     private void Update()
     {
@@ -86,8 +107,19 @@ public class BoyController : MonoBehaviour
             {
                 case IsAnimFixedType.USECARD_ANIM_STATE:
                     Animator anim = UseCard.GetComponent<Animator>();
-                    if(anim.GetCurrentAnimatorStateInfo(0).IsName("AnimStop"))
+                    AnimatorStateInfo animStateInfo = anim.GetCurrentAnimatorStateInfo(0);
+
+                    // 這邊是用來判斷是否要切換
+                    if (animStateInfo.IsName("UseCard_Normal"))
+                        SetUseCardParent(0);
+                    else if (animStateInfo.IsName("UseCard_LightFX"))
+                        SetUseCardParent(1);
+                    // 特效結束條件判斷
+                    else if(animStateInfo.IsName("AnimStop"))
+                    {
                         IsAnimFixed = IsAnimFixedType.UNFIXED;
+                        SetUseCardParent(-1);
+                    }
                     break;
             }
         }
@@ -238,6 +270,15 @@ public class BoyController : MonoBehaviour
     {
         ResetGameObject(ResetToSet_State.USEWARD_STATE, 0);
         IsAnimFixed = IsAnimFixedType.USECARD_ANIM_STATE;
+    }
+    // UseCard
+    private void SetUseCardParent(int index)
+    {
+        for (int i = 0; i < UseCardParent.Length; i++)
+            if (i == index)
+                UseCardParent[i].SetActive(true);
+            else
+                UseCardParent[i].SetActive(false);
     }
     #endregion
 }
